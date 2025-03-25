@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.relics.Vajra;
+import com.megacrit.cardcrawl.relics.Omamori;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import xintao.mod.card.Strike;
 import xintao.mod.util.CodeUtil;
@@ -60,7 +60,7 @@ public class Magician extends CustomPlayer
     // 人物的本地化文本，如卡牌的本地化文本一样，如何书写见下
     private static final CharacterStrings characterStrings = 
             CardCrawlGame.languagePack
-                    .getCharacterString("MyCharacterStyle:MyCharacter");
+                    .getCharacterString("xintaomod:Magician");
 
     public Magician(String name)
     {
@@ -107,7 +107,7 @@ public class Magician extends CustomPlayer
     public ArrayList<String> getStartingRelics()
     {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(Vajra.ID);
+        retVal.add(Omamori.ID);
         
         return retVal;
     }
