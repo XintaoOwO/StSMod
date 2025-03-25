@@ -7,8 +7,13 @@ public class CodeUtil
         return "xintaomod:" + id;
     }
     
-    public static String path(String id)
+    public static String cardPath(String id)
     {
         return "xintao/mod/img/card/" + id + ".png";
+    }
+    
+    public static String imgPath(String id)
+    {
+        return "xintao/mod/img/" + id + ".png";
     }
 }
