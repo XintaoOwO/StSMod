@@ -9,7 +9,7 @@ public class CodeUtil
     
     public static String cardPath(String id)
     {
-        return "xintao/mod/img/card/" + id;
+        return "xintao/mod/img/card/" + id + ".png";
     }
     
     public static String imgPath(String id)
