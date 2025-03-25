@@ -4,7 +4,7 @@ import basemod.BaseMod;
 import com.badlogic.gdx.graphics.Color;
 import xintao.mod.util.CodeUtil;
 
-import static xintao.mod.character.MyCharacter.PlayerColorEnum.EXAMPLE_GREEN;
+import static xintao.mod.character.Magician.PlayerColorEnum.EXAMPLE_GREEN;
 
 public class MyCharacterStyle
 {

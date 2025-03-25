@@ -24,10 +24,13 @@ import xintao.mod.util.CodeUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-import static xintao.mod.character.MyCharacter.PlayerColorEnum.MY_CHARACTER;
+import static xintao.mod.character.Magician.PlayerColorEnum.MY_CHARACTER;
 
-public class MyCharacter extends CustomPlayer
+public class Magician extends CustomPlayer
 {
+    private static final String NAME = "魔术师";
+    private static final String description = "来自异域的魔术师，擅长运用魔术迷惑敌人。";
+    private static final String heart_event_text = "你握紧了手中的魔法棒······";
     // 火堆的人物立绘（行动前）
     private static final String MY_CHARACTER_SHOULDER_1 = CodeUtil.imgPath("char/shoulder1.png");
     // 火堆的人物立绘（行动后）
@@ -59,7 +62,7 @@ public class MyCharacter extends CustomPlayer
             CardCrawlGame.languagePack
                     .getCharacterString("MyCharacterStyle:MyCharacter");
 
-    public MyCharacter(String name)
+    public Magician(String name)
     {
         super(name, MY_CHARACTER, ORB_TEXTURES, CodeUtil.imgPath("UI/orb/vfx.png"), LAYER_SPEED, null, null);
         
@@ -109,8 +112,8 @@ public class MyCharacter extends CustomPlayer
     @Override
     public CharSelectInfo getLoadout() {
         return new CharSelectInfo(
-                characterStrings.NAMES[0], // 人物名字
-                characterStrings.TEXT[0], // 人物介绍
+                NAME, // 人物名字
+                description, // 人物介绍
                 75, // 当前血量
                 75, // 最大血量
                 0, // 初始充能球栏位
@@ -127,7 +130,7 @@ public class MyCharacter extends CustomPlayer
     @Override
     public String getTitle(PlayerClass playerClass)
     {
-        return characterStrings.NAMES[0];
+        return NAME;
     }
 
     // 你的卡牌颜色（这个枚举在最下方创建）
@@ -195,21 +198,21 @@ public class MyCharacter extends CustomPlayer
     @Override
     public String getLocalizedCharacterName()
     {
-        return characterStrings.NAMES[0];
+        return NAME;
     }
 
     // 创建人物实例，照抄
     @Override
     public AbstractPlayer newInstance()
     {
-        return new MyCharacter(this.name);
+        return new Magician(this.name);
     }
 
     // 第三章面对心脏说的话（例如战士是“你握紧了你的长刀……”之类的）
     @Override
     public String getSpireHeartText()
     {
-        return characterStrings.TEXT[1];
+        return heart_event_text;
     }
 
     // 打心脏的颜色，不是很明显
@@ -235,9 +238,17 @@ public class MyCharacter extends CustomPlayer
 
     // 第三章面对心脏造成伤害时的特效
     @Override
-    public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect()
+    public AbstractGameAction.AttackEffect [] getSpireHeartSlashEffect()
     {
-        return new AbstractGameAction.AttackEffect[]{AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.SLASH_DIAGONAL};
+        return new AbstractGameAction.AttackEffect []
+                {
+                        AbstractGameAction.AttackEffect.SLASH_HEAVY, 
+                        AbstractGameAction.AttackEffect.FIRE, 
+                        AbstractGameAction.AttackEffect.SLASH_DIAGONAL, 
+                        AbstractGameAction.AttackEffect.SLASH_HEAVY, 
+                        AbstractGameAction.AttackEffect.FIRE, 
+                        AbstractGameAction.AttackEffect.SLASH_DIAGONAL
+                };
     }
 
     // 以下为原版人物枚举、卡牌颜色枚举扩展的枚举，需要写，接下来要用
