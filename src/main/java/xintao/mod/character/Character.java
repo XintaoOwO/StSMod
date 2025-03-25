@@ -5,8 +5,8 @@ import basemod.interfaces.EditCharactersSubscriber;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 
 import static xintao.mod.character.Magician.PlayerColorEnum.MY_CHARACTER;
-import static xintao.mod.character.MyCharacterStyle.MY_CHARACTER_BUTTON;
-import static xintao.mod.character.MyCharacterStyle.MY_CHARACTER_PORTRAIT;
+import static xintao.mod.character.MagicianStyle.MY_CHARACTER_BUTTON;
+import static xintao.mod.character.MagicianStyle.MY_CHARACTER_PORTRAIT;
 
 public class Character implements EditCharactersSubscriber
 {

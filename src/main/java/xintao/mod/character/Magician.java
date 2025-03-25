@@ -155,7 +155,7 @@ public class Magician extends CustomPlayer
     @Override
     public Color getCardTrailColor()
     {
-        return MyCharacterStyle.colour;
+        return MagicianStyle.colour;
     }
 
     // 高进阶带来的生命值损失
@@ -223,7 +223,7 @@ public class Magician extends CustomPlayer
     @Override
     public Color getSlashAttackColor()
     {
-        return MyCharacterStyle.colour;
+        return MagicianStyle.colour;
     }
 
     // 吸血鬼事件文本，主要是他（索引为0）和她（索引为1）的区别（机器人另外）
@@ -237,7 +237,7 @@ public class Magician extends CustomPlayer
     @Override
     public Color getCardRenderColor()
     {
-        return MyCharacterStyle.colour;
+        return MagicianStyle.colour;
     }
 
     // 第三章面对心脏造成伤害时的特效

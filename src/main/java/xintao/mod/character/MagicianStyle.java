@@ -6,13 +6,13 @@ import xintao.mod.util.CodeUtil;
 
 import static xintao.mod.character.Magician.PlayerColorEnum.EXAMPLE_GREEN;
 
-public class MyCharacterStyle
+public class MagicianStyle
 {
     public static final Color colour = new Color(95.0f / 255.0f, 194.0f / 255.0f, 1.0f, 1.0f);
     // 人物选择界面按钮的图片
     static final String MY_CHARACTER_BUTTON = CodeUtil.imgPath("char/Character_Button.png");
     // 人物选择界面的立绘
-    static final String MY_CHARACTER_PORTRAIT = CodeUtil.imgPath("char/Character_Portrait.png");
+    static final String MY_CHARACTER_PORTRAIT = CodeUtil.imgPath("char/Character_Portrait.jpg");
     // 攻击牌的背景（小尺寸）
     private static final String BG_ATTACK_512 = CodeUtil.imgPath("bg512/bg_attack_512.png");
     // 能力牌的背景（小尺寸）
@@ -32,7 +32,7 @@ public class MyCharacterStyle
     // 小尺寸的能量图标（战斗中，牌堆预览）
     private static final String ENEYGY_ORB = CodeUtil.imgPath("char/cost_orb.png");
     
-    public MyCharacterStyle()
+    public MagicianStyle()
     {
         BaseMod.addColor
                 (
