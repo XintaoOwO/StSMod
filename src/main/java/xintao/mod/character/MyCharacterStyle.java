@@ -10,9 +10,9 @@ public class MyCharacterStyle
 {
     public static final Color colour = new Color(95.0f / 255.0f, 194.0f / 255.0f, 1.0f, 1.0f);
     // 人物选择界面按钮的图片
-    private static final String MY_CHARACTER_BUTTON = CodeUtil.imgPath("char/Character_Button.png");
+    static final String MY_CHARACTER_BUTTON = CodeUtil.imgPath("char/Character_Button.png");
     // 人物选择界面的立绘
-    private static final String MY_CHARACTER_PORTRAIT = CodeUtil.imgPath("char/Character_Portrait.png");
+    static final String MY_CHARACTER_PORTRAIT = CodeUtil.imgPath("char/Character_Portrait.png");
     // 攻击牌的背景（小尺寸）
     private static final String BG_ATTACK_512 = CodeUtil.imgPath("bg512/bg_attack_512.png");
     // 能力牌的背景（小尺寸）
