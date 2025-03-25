@@ -93,10 +93,12 @@ public class Magician extends CustomPlayer
     public ArrayList<String> getStartingDeck()
     {
         ArrayList<String> retVal = new ArrayList<>();
-        for(int x = 0; x<5; x++) {
+        for(int x = 0; x < 5; x ++)
+        {
             retVal.add(Strike.ID);
         }
         retVal.add("MyCharacterStyle:Strike");
+        
         return retVal;
     }
 
@@ -106,11 +108,13 @@ public class Magician extends CustomPlayer
     {
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add(Vajra.ID);
+        
         return retVal;
     }
 
     @Override
-    public CharSelectInfo getLoadout() {
+    public CharSelectInfo getLoadout()
+    {
         return new CharSelectInfo(
                 NAME, // 人物名字
                 description, // 人物介绍
@@ -181,9 +185,9 @@ public class Magician extends CustomPlayer
     {
         ArrayList<CutscenePanel> panels = new ArrayList<>();
         // 有两个参数的，第二个参数表示出现图片时播放的音效
-        panels.add(new CutscenePanel("MyCharacterStyleResources/img/char/Victory1.png", "ATTACK_MAGIC_FAST_1"));
-        panels.add(new CutscenePanel("MyCharacterStyleResources/img/char/Victory2.png"));
-        panels.add(new CutscenePanel("MyCharacterStyleResources/img/char/Victory3.png"));
+        panels.add(new CutscenePanel(CodeUtil.imgPath("char/Victory1.png"), "ATTACK_MAGIC_FAST_1"));
+        panels.add(new CutscenePanel(CodeUtil.imgPath("char/Victory2.png")));
+        panels.add(new CutscenePanel(CodeUtil.imgPath("char/Victory3.png")));
         return panels;
     }
 
