@@ -1,9 +1,7 @@
 package xintao.mod.main;
 
 import basemod.BaseMod;
-import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
-import xintao.mod.relic.magician.MagicStick;
 
 public class Relic implements EditRelicsSubscriber
 {
@@ -15,7 +13,7 @@ public class Relic implements EditRelicsSubscriber
     @Override
     public void receiveEditRelics()
     {
-        BaseMod.addRelic(new MagicStick(), RelicType.SHARED);
+        //BaseMod.addRelic(new MagicStick(), RelicType.SHARED);
         
         /*
         // This finds and adds all relics inheriting from CustomRelic that are in the same package

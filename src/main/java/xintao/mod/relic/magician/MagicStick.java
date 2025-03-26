@@ -2,7 +2,6 @@ package xintao.mod.relic.magician;
 
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import xintao.mod.util.CodeUtil;
 
