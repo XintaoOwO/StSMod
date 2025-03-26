@@ -1,6 +1,7 @@
 package xintao.mod.relic.magician;
 
 import basemod.abstracts.CustomRelic;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -14,10 +15,11 @@ public class MagicStick extends CustomRelic
     private static final RelicTier tier = RelicTier.STARTER;
     private static final String description = "每次战斗开始时，";
     private static final LandingSound landing_sound = LandingSound.FLAT;
+    private static final Texture texture = new Texture(img_path);
     
     public MagicStick()
     {
-        super(ID, ImageMaster.loadImage(img_path), tier, landing_sound);
+        super(ID, texture, tier, landing_sound);
     }
 
     @Override

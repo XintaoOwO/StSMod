@@ -10,5 +10,6 @@ public class Core
         new Card();
         new Relic();
         new Character();
+        new Keyword();
     }
 }
