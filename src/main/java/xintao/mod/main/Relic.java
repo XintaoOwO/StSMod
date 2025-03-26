@@ -15,7 +15,7 @@ public class Relic implements EditRelicsSubscriber
     @Override
     public void receiveEditRelics()
     {
-        BaseMod.addRelic(new MagicStick(), RelicType.SHARED);
+        //BaseMod.addRelic(new MagicStick(), RelicType.SHARED);
         
         /*
         // This finds and adds all relics inheriting from CustomRelic that are in the same package
