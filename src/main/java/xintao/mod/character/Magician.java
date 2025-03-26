@@ -16,9 +16,9 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.relics.Omamori;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import xintao.mod.card.Strike;
+import xintao.mod.relic.magician.MagicStick;
 import xintao.mod.util.CodeUtil;
 
 import java.util.ArrayList;
@@ -60,7 +60,7 @@ public class Magician extends CustomPlayer
     // 人物的本地化文本，如卡牌的本地化文本一样，如何书写见下
     private static final CharacterStrings characterStrings = 
             CardCrawlGame.languagePack
-                    .getCharacterString("xintaomod:Magician");
+                    .getCharacterString(CodeUtil.of("Magician"));
 
     public Magician(String name)
     {
@@ -93,11 +93,13 @@ public class Magician extends CustomPlayer
     public ArrayList<String> getStartingDeck()
     {
         ArrayList<String> retVal = new ArrayList<>();
-        for(int x = 0; x < 5; x ++)
+        
+        for (int x = 0; x < 5; x ++)
         {
             retVal.add(Strike.ID);
         }
-        retVal.add("MyCharacterStyle:Strike");
+        
+        retVal.add(CodeUtil.of("Strike"));
         
         return retVal;
     }
@@ -107,7 +109,7 @@ public class Magician extends CustomPlayer
     public ArrayList<String> getStartingRelics()
     {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(Omamori.ID);
+        retVal.add(MagicStick.ID);
         
         return retVal;
     }
@@ -188,6 +190,7 @@ public class Magician extends CustomPlayer
         panels.add(new CutscenePanel(CodeUtil.imgPath("char/Victory1.png"), "ATTACK_MAGIC_FAST_1"));
         panels.add(new CutscenePanel(CodeUtil.imgPath("char/Victory2.png")));
         panels.add(new CutscenePanel(CodeUtil.imgPath("char/Victory3.png")));
+        
         return panels;
     }
 
