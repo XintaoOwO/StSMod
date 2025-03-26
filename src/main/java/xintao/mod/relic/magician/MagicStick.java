@@ -2,6 +2,7 @@ package xintao.mod.relic.magician;
 
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import xintao.mod.util.CodeUtil;
 
 public class MagicStick extends CustomRelic
@@ -14,7 +15,7 @@ public class MagicStick extends CustomRelic
     
     public MagicStick()
     {
-        super(ID, img_path, tier, landing_sound);
+        super(ID, ImageMaster.loadImage(img_path), tier, landing_sound);
     }
     
     public String getDescription()
