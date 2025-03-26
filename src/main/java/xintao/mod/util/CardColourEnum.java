@@ -1,4 +1,4 @@
-package xintao.mod.card;
+package xintao.mod.util;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;
