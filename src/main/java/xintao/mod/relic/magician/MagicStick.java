@@ -17,7 +17,7 @@ public class MagicStick extends CustomRelic
     
     public MagicStick()
     {
-        super(ID, ImageMaster.loadImage(img_path), ImageMaster.loadImage(outline_path), tier, landing_sound);
+        super(ID, img_path, tier, landing_sound);
     }
     
     public String getDescription()
