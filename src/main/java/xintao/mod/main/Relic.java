@@ -1,11 +1,9 @@
 package xintao.mod.main;
 
-import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
-import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import xintao.mod.character.Magician;
+import xintao.mod.relic.magician.MagicStick;
 
 public class Relic implements EditRelicsSubscriber
 {
@@ -17,6 +15,9 @@ public class Relic implements EditRelicsSubscriber
     @Override
     public void receiveEditRelics()
     {
+        BaseMod.addRelic(new MagicStick(), RelicType.SHARED);
+        
+        /*
         // This finds and adds all relics inheriting from CustomRelic that are in the same package
         // as MyRelic, keeping all as unseen except those annotated with @AutoAdd.Seen
         new AutoAdd(Core.Mod_ID)
@@ -31,5 +32,7 @@ public class Relic implements EditRelicsSubscriber
                             }
                         }
                 );
+                
+         */
     }
 }

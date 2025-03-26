@@ -10,10 +10,11 @@ public class MagicStick extends CustomRelic
     private static final String img_path = CodeUtil.imgPath("relic/Magic_Stick.png");
     private static final RelicTier tier = RelicTier.STARTER;
     private static final String description = "每次战斗开始时，";
+    private static final LandingSound landing_sound = LandingSound.FLAT;
     
-    public MagicStick(String id, String imgName, RelicTier tier, LandingSound sfx)
+    public MagicStick()
     {
-        super(id, imgName, tier, sfx);
+        super(ID, img_path, tier, landing_sound);
     }
     
     public String getDescription()
