@@ -20,7 +20,7 @@ public class Relic implements EditRelicsSubscriber
         // This finds and adds all relics inheriting from CustomRelic that are in the same package
         // as MyRelic, keeping all as unseen except those annotated with @AutoAdd.Seen
         new AutoAdd(Core.Mod_ID)
-                .packageFilter(Core.Mod_Relic_Package)
+                .packageFilter(Core.Mod_Relic_Package + ".magician")
                 .any(CustomRelic.class, (info, relic) -> 
                         {
                             BaseMod.addRelicToCustomPool(relic, Magician.PlayerColorEnum.Magician_Colour);
