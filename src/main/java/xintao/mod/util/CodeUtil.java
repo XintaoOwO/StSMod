@@ -9,8 +9,8 @@ public final class CodeUtil
         return Core.Mod_ID + ":" + id;
     }
 
-    public static String imgPath(String id)
+    public static String imgPath(String path)
     {
-        return Core.Mod_Img_Path + id;
+        return Core.Mod_Img_Path + path;
     }
 }
