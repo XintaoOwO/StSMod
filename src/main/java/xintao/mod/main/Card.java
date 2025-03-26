@@ -3,6 +3,7 @@ package xintao.mod.main;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
+import xintao.mod.util.CodeUtil;
 
 public class Card implements EditCardsSubscriber
 {
@@ -14,8 +15,8 @@ public class Card implements EditCardsSubscriber
     @Override
     public void receiveEditCards()
     {
-        new AutoAdd(Core.Mod_ID)
-                .packageFilter(Core.Mod_Card_Package)
+        new AutoAdd(CodeUtil.Mod_ID)
+                .packageFilter(CodeUtil.Mod_Card_Package)
                 .setDefaultSeen(true)
                 .cards();
     }
