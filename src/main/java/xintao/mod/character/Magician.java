@@ -278,7 +278,7 @@ public class Magician extends CustomPlayer
 
         // 这个变量未被使用（呈现灰色）是正常的
         @SpireEnum
-        public static CardLibrary.LibraryType EXAMPLE_GREEN;
+        public static CardLibrary.LibraryType Magician_Colour;
     }
 
 }
