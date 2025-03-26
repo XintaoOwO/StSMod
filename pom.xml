@@ -19,8 +19,8 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <SlayTheSpire.version>12-22-2020</SlayTheSpire.version>
-        <ModTheSpire.version>3.23.2</ModTheSpire.version>
+        <SlayTheSpire.version>12-18-2022</SlayTheSpire.version>
+        <ModTheSpire.version>3.30.3</ModTheSpire.version>
         <!-- *****一定要改 ***** -->
         <!-- 改成你的steam安装路径位置，指向steamapps文件夹（该目录安装了杀戮尖塔及mod） -->
         <!-- 注意使用正斜杠（/）而不是反斜杠（\） -->

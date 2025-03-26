@@ -1,4 +1,4 @@
-package xintao.mod.card;
+package xintao.mod.card.magician;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -8,19 +8,19 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.mod.util.CodeUtil;
 
-public class Strike extends CustomCard
+public class Strike_Magician extends CustomCard
 {
-    public static final String ID = CodeUtil.of("Strike");
+    public static final String ID = CodeUtil.of("Strike_Magician");
     private static final String name = "打击";
     private static final int cost = 1;
     private static final String description = "造成 !D! 点伤害。";
-    private static final String img_path = CodeUtil.imgPath("card/Strike.png");
+    private static final String img_path = CodeUtil.imgPath("card/magician/Strike.png");
     private static final CardType type = CardType.ATTACK;
     private static final CardColor color = CardColor.COLORLESS;
     private static final CardRarity rarity = CardRarity.BASIC;
     private static final CardTarget target = CardTarget.ENEMY;
     
-    public Strike()
+    public Strike_Magician()
     {
         super(ID, name, img_path, cost, description, type, color, rarity, target);
         

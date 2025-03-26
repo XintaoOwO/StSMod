@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Omamori;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import xintao.mod.card.Strike;
+import xintao.mod.card.magician.Strike_Magician;
 import xintao.mod.util.CodeUtil;
 
 import java.util.ArrayList;
@@ -96,7 +96,7 @@ public class Magician extends CustomPlayer
         
         for (int x = 0; x < 5; x ++)
         {
-            retVal.add(Strike.ID);
+            retVal.add(Strike_Magician.ID);
         }
         
         retVal.add(CodeUtil.of("Strike"));
@@ -150,7 +150,7 @@ public class Magician extends CustomPlayer
     @Override
     public AbstractCard getStartCardForEvent()
     {
-        return new Strike();
+        return new Strike_Magician();
     }
 
     // 卡牌轨迹颜色
