@@ -4,15 +4,15 @@ import basemod.BaseMod;
 import com.badlogic.gdx.graphics.Color;
 import xintao.mod.util.CodeUtil;
 
-import static xintao.mod.character.Magician.PlayerColorEnum.EXAMPLE_GREEN;
+import static xintao.mod.character.Magician.PlayerColorEnum.Magician_Colour;
 
 public class MagicianStyle
 {
     public static final Color colour = new Color(95.0f / 255.0f, 194.0f / 255.0f, 1.0f, 1.0f);
     // 人物选择界面按钮的图片
-    static final String MY_CHARACTER_BUTTON = CodeUtil.imgPath("char/Character_Button.png");
+    public static final String MY_CHARACTER_BUTTON = CodeUtil.imgPath("char/Character_Button.png");
     // 人物选择界面的立绘
-    static final String MY_CHARACTER_PORTRAIT = CodeUtil.imgPath("char/Character_Portrait.jpg");
+    public static final String MY_CHARACTER_PORTRAIT = CodeUtil.imgPath("char/Character_Portrait.jpg");
     // 攻击牌的背景（小尺寸）
     private static final String BG_ATTACK_512 = CodeUtil.imgPath("bg512/bg_attack_512.png");
     // 能力牌的背景（小尺寸）
@@ -36,7 +36,7 @@ public class MagicianStyle
     {
         BaseMod.addColor
                 (
-                        EXAMPLE_GREEN, 
+                        Magician_Colour, // 卡牌颜色
                         colour, 
                         colour, 
                         colour, 

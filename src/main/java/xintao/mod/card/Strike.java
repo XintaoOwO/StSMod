@@ -14,7 +14,7 @@ public class Strike extends CustomCard
     private static final String name = "打击";
     private static final int cost = 1;
     private static final String description = "造成 !D! 点伤害。";
-    private static final String img_path = CodeUtil.cardPath("Strike");
+    private static final String img_path = CodeUtil.imgPath("card/Strike.png");
     private static final CardType type = CardType.ATTACK;
     private static final CardColor color = CardColor.COLORLESS;
     private static final CardRarity rarity = CardRarity.BASIC;

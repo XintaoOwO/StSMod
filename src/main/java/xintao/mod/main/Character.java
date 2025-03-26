@@ -1,8 +1,9 @@
-package xintao.mod.character;
+package xintao.mod.main;
 
 import basemod.BaseMod;
 import basemod.interfaces.EditCharactersSubscriber;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import xintao.mod.character.Magician;
 
 import static xintao.mod.character.Magician.PlayerColorEnum.MY_CHARACTER;
 import static xintao.mod.character.MagicianStyle.MY_CHARACTER_BUTTON;

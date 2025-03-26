@@ -141,7 +141,7 @@ public class Magician extends CustomPlayer
     @Override
     public AbstractCard.CardColor getCardColor()
     {
-        return PlayerColorEnum.EXAMPLE_GREEN;
+        return PlayerColorEnum.Magician_Colour;
     }
 
     // 翻牌事件出现的你的职业牌（一般设为打击）
@@ -268,7 +268,7 @@ public class Magician extends CustomPlayer
         // ***将CardColor和LibraryType的变量名改为你的角色的颜色名称，确保不会与其他mod冲突***
         // ***并且名称需要一致！***
         @SpireEnum
-        public static AbstractCard.CardColor EXAMPLE_GREEN;
+        public static AbstractCard.CardColor Magician_Colour;
     }
 
     public static class PlayerLibraryEnum 
