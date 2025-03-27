@@ -1,8 +1,6 @@
 package xintao.mod.power;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -11,16 +9,16 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import xintao.mod.util.CodeUtil;
 
-public class Phantom extends AbstractPower
+public class PhantomPower extends AbstractPower
 {
     public static final String power_id = CodeUtil.of("Phantom");
     public static final String power_name = "幻象";
-    public static final String power_description = "拥有 #y幻象 的实体在攻击时会受到本次攻击的50%的伤害。回合结束后减少一层 #y幻象 。";
+    public static final String power_description = "拥有 #y幻象 的实体不能打出有效伤害。回合结束后减少一层 #y幻象 。";
     private static final String path128 = CodeUtil.imgPath("power/Phantom128.png");
     private static final String path48 = CodeUtil.imgPath("power/Phantom48.png");
     private boolean justApplied = false;
     
-    public Phantom(AbstractCreature owner, int amountNumber)
+    public PhantomPower(AbstractCreature owner, int amountNumber)
     {
         this.name = power_name;
         this.ID = power_id;
@@ -42,39 +40,11 @@ public class Phantom extends AbstractPower
     }
 
     @Override
-    public int onAttackedToChangeDamage(DamageInfo info, int damageAmount)
-    {
-        if (damageAmount > 0)
-        {
-            this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 0));
-        }
-        
-        return 0;
-    }
-
-    @Override
-    public int onAttacked(DamageInfo info, int damageAmount)
-    {
-        if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner)
-        {
-            this.flash();
-            
-            this.addToTop(new DamageAction(
-                    info.owner, 
-                    new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), 
-                    AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, 
-                    true));
-        }
-
-        return damageAmount;
-    }
-
-    @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type)
     {
         if (type == DamageInfo.DamageType.NORMAL)
         {
-            return damage * 0.5f;
+            return 0;
         }
         else 
             return damage;
