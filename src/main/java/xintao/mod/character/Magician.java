@@ -18,6 +18,8 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Omamori;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import xintao.mod.card.magician.Defend_Magician;
+import xintao.mod.card.magician.PhantomAttack;
 import xintao.mod.card.magician.Strike_Magician;
 import xintao.mod.main.Character;
 import xintao.mod.util.CodeUtil;
@@ -98,10 +100,10 @@ public class Magician extends CustomPlayer
         for (int x = 0; x < 5; x ++)
         {
             retVal.add(Strike_Magician.ID);
-            //retVal.add(Defend_Magician.ID);
+            retVal.add(Defend_Magician.ID);
         }
         
-        //retVal.add(PhantomAttack.ID);
+        retVal.add(PhantomAttack.ID);
         
         return retVal;
     }

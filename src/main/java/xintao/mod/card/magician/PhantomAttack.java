@@ -11,7 +11,6 @@ import xintao.mod.character.Magician;
 import xintao.mod.power.Phantom;
 import xintao.mod.util.CodeUtil;
 
-@AutoAdd.Ignore
 public class PhantomAttack extends CustomCard
 {
     public static final String ID = CodeUtil.of("Phantom_Attack");
