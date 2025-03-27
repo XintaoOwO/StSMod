@@ -46,7 +46,7 @@ public class Phantom extends AbstractPower
     {
         if (damageAmount > 0)
         {
-            this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
+            this.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 0));
         }
         
         return 0;
