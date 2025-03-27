@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Omamori;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import xintao.mod.card.magician.Strike_Magician;
+import xintao.mod.main.Character;
 import xintao.mod.util.CodeUtil;
 
 import java.util.ArrayList;
@@ -158,7 +159,7 @@ public class Magician extends CustomPlayer
     @Override
     public Color getCardTrailColor()
     {
-        return MagicianStyle.colour;
+        return Character.Magician_colour;
     }
 
     // 高进阶带来的生命值损失
@@ -227,7 +228,7 @@ public class Magician extends CustomPlayer
     @Override
     public Color getSlashAttackColor()
     {
-        return MagicianStyle.colour;
+        return Character.Magician_colour;
     }
 
     // 吸血鬼事件文本，主要是他（索引为0）和她（索引为1）的区别（机器人另外）
@@ -241,7 +242,7 @@ public class Magician extends CustomPlayer
     @Override
     public Color getCardRenderColor()
     {
-        return MagicianStyle.colour;
+        return Character.Magician_colour;
     }
 
     // 第三章面对心脏造成伤害时的特效
