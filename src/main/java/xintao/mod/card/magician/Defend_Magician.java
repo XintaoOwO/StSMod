@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import xintao.mod.character.Magician;
 import xintao.mod.util.CodeUtil;
 
 public class Defend_Magician extends CustomCard
@@ -16,8 +17,8 @@ public class Defend_Magician extends CustomCard
     private static final String description = "获得 !B! 点格挡。";
     private static final String img_path = CodeUtil.imgPath("card/magician/Defend_Magician.png");
     private static final CardType type = CardType.SKILL;
-    private static final CardColor color = CardColor.COLORLESS;
-    //private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
+    //private static final CardColor color = CardColor.COLORLESS;
+    private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
     private static final CardRarity rarity = CardRarity.BASIC;
     private static final CardTarget target = CardTarget.SELF;
 
