@@ -1,10 +1,7 @@
 package xintao.mod.character;
 
-import basemod.BaseMod;
 import com.badlogic.gdx.graphics.Color;
 import xintao.mod.util.CodeUtil;
-
-import static xintao.mod.character.Magician.PlayerColorEnum.Magician_Colour;
 
 public class MagicianStyle
 {
@@ -14,45 +11,21 @@ public class MagicianStyle
     // 人物选择界面的立绘
     public static final String MY_CHARACTER_PORTRAIT = CodeUtil.imgPath("char/Character_Portrait.jpg");
     // 攻击牌的背景（小尺寸）
-    private static final String BG_ATTACK_512 = CodeUtil.imgPath("bg512/bg_attack_512.png");
+    public static final String BG_ATTACK_512 = CodeUtil.imgPath("bg512/bg_attack_512.png");
     // 能力牌的背景（小尺寸）
-    private static final String BG_POWER_512 = CodeUtil.imgPath("bg512/bg_power_512.png");
+    public static final String BG_POWER_512 = CodeUtil.imgPath("bg512/bg_power_512.png");
     // 技能牌的背景（小尺寸）
-    private static final String BG_SKILL_512 = CodeUtil.imgPath("bg512/bg_skill_512.png");
+    public static final String BG_SKILL_512 = CodeUtil.imgPath("bg512/bg_skill_512.png");
     // 在卡牌和遗物描述中的能量图标
-    private static final String SMALL_ORB = CodeUtil.imgPath("char/small_orb.png");
+    public static final String SMALL_ORB = CodeUtil.imgPath("char/small_orb.png");
     // 攻击牌的背景（大尺寸）
-    private static final String BG_ATTACK_1024 = CodeUtil.imgPath("bg1024/bg_attack.png");
+    public static final String BG_ATTACK_1024 = CodeUtil.imgPath("bg1024/bg_attack.png");
     // 能力牌的背景（大尺寸）
-    private static final String BG_POWER_1024 = CodeUtil.imgPath("bg1024/bg_power.png");
+    public static final String BG_POWER_1024 = CodeUtil.imgPath("bg1024/bg_power.png");
     // 技能牌的背景（大尺寸）
-    private static final String BG_SKILL_1024 = CodeUtil.imgPath("bg1024/bg_skill.png");
+    public static final String BG_SKILL_1024 = CodeUtil.imgPath("bg1024/bg_skill.png");
     // 在卡牌预览界面的能量图标
-    private static final String BIG_ORB = CodeUtil.imgPath("char/card_orb.png");
+    public static final String BIG_ORB = CodeUtil.imgPath("char/card_orb.png");
     // 小尺寸的能量图标（战斗中，牌堆预览）
-    private static final String ENEYGY_ORB = CodeUtil.imgPath("char/cost_orb.png");
-    
-    public MagicianStyle()
-    {
-        BaseMod.addColor
-                (
-                        Magician_Colour, // 卡牌颜色
-                        colour, 
-                        colour, 
-                        colour, 
-                        colour, 
-                        colour, 
-                        colour, 
-                        colour, 
-                        BG_ATTACK_512, 
-                        BG_SKILL_512, 
-                        BG_POWER_512, 
-                        ENEYGY_ORB, 
-                        BG_ATTACK_1024, 
-                        BG_SKILL_1024, 
-                        BG_POWER_1024, 
-                        BIG_ORB, 
-                        SMALL_ORB
-                );
-    }
+    public static final String ENEYGY_ORB = CodeUtil.imgPath("char/cost_orb.png");
 }

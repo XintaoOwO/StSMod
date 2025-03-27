@@ -18,15 +18,13 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Omamori;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import xintao.mod.card.magician.Defend_Magician;
-import xintao.mod.card.magician.PhantomAttack;
 import xintao.mod.card.magician.Strike_Magician;
 import xintao.mod.util.CodeUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static xintao.mod.character.Magician.PlayerColorEnum.MY_CHARACTER;
+import static xintao.mod.character.Magician.PlayerColorEnum.Magician_Character;
 
 public class Magician extends CustomPlayer
 {
@@ -66,7 +64,7 @@ public class Magician extends CustomPlayer
 
     public Magician(String name)
     {
-        super(name, MY_CHARACTER, ORB_TEXTURES, CodeUtil.imgPath("UI/orb/vfx.png"), LAYER_SPEED, null, null);
+        super(name, Magician_Character, ORB_TEXTURES, CodeUtil.imgPath("UI/orb/vfx.png"), LAYER_SPEED, null, null);
         
         // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
@@ -99,10 +97,10 @@ public class Magician extends CustomPlayer
         for (int x = 0; x < 5; x ++)
         {
             retVal.add(Strike_Magician.ID);
-            retVal.add(Defend_Magician.ID);
+            //retVal.add(Defend_Magician.ID);
         }
         
-        retVal.add(PhantomAttack.ID);
+        //retVal.add(PhantomAttack.ID);
         
         return retVal;
     }
@@ -269,7 +267,7 @@ public class Magician extends CustomPlayer
     {
         // 修改为你的颜色名称，确保不会与其他mod冲突
         @SpireEnum
-        public static PlayerClass MY_CHARACTER;
+        public static PlayerClass Magician_Character;
 
         // ***将CardColor和LibraryType的变量名改为你的角色的颜色名称，确保不会与其他mod冲突***
         // ***并且名称需要一致！***

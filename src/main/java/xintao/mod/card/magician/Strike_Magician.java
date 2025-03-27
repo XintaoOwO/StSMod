@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import xintao.mod.character.Magician;
 import xintao.mod.util.CodeUtil;
 
 public class Strike_Magician extends CustomCard
@@ -18,7 +17,8 @@ public class Strike_Magician extends CustomCard
     private static final String description = "造成 !D! 点伤害。";
     private static final String img_path = CodeUtil.imgPath("card/magician/Strike_Magician.png");
     private static final CardType type = CardType.ATTACK;
-    private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
+    private static final CardColor color = CardColor.COLORLESS;
+    //private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
     private static final CardRarity rarity = CardRarity.BASIC;
     private static final CardTarget target = CardTarget.ENEMY;
     

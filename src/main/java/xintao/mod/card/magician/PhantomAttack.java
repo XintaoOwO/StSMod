@@ -1,16 +1,17 @@
 package xintao.mod.card.magician;
 
+import basemod.AutoAdd;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.mod.character.Magician;
 import xintao.mod.power.Phantom;
 import xintao.mod.util.CodeUtil;
 
+@AutoAdd.Ignore
 public class PhantomAttack extends CustomCard
 {
     public static final String ID = CodeUtil.of("Phantom_Attack");

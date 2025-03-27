@@ -1,9 +1,7 @@
 package xintao.mod.main;
 
 import basemod.BaseMod;
-import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
-import xintao.mod.relic.magician.MagicStick;
 
 public class Relic implements EditRelicsSubscriber
 {
