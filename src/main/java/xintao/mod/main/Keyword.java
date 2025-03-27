@@ -16,7 +16,7 @@ public class Keyword implements EditKeywordsSubscriber
     public void receiveEditKeywords()
     {
         // 幻象
-        BaseMod.addKeyword(CodeUtil.Mod_ID, PhantomPower.power_name, 
-                new String [] {PhantomPower.power_name}, PhantomPower.power_description);
+        BaseMod.addKeyword(CodeUtil.Mod_ID, CodeUtil.of(PhantomPower.power_name), 
+                new String [] {CodeUtil.of(PhantomPower.power_name)}, PhantomPower.power_description);
     }
 }

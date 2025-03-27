@@ -13,7 +13,7 @@ public class PhantomPower extends AbstractPower
 {
     public static final String power_id = CodeUtil.of("Phantom");
     public static final String power_name = "幻象";
-    public static final String power_description = "拥有 #y幻象 的实体不能打出有效伤害。回合结束后减少一层 #y幻象 。";
+    public static final String power_description = "拥有 #yxintaomod:幻象 的实体不能打出有效伤害。回合结束后减少一层 #yxintaomod:幻象 。";
     private static final String path128 = CodeUtil.imgPath("power/Phantom128.png");
     private static final String path48 = CodeUtil.imgPath("power/Phantom48.png");
     private boolean justApplied = false;
