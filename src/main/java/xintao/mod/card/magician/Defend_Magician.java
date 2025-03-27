@@ -2,8 +2,9 @@ package xintao.mod.card.magician;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.mod.character.Magician;
 import xintao.mod.util.CodeUtil;
@@ -41,7 +42,19 @@ public class Defend_Magician extends CustomCard
     @Override
     public void use(AbstractPlayer player, AbstractMonster monster)
     {
-        AbstractDungeon.actionManager
-                .addToBottom(new GainBlockAction(player, player, this.block));
+        if (Settings.isDebug)
+        {
+            this.addToBot(new GainBlockAction(player, player, 50));
+        }
+        else
+        {
+            this.addToBot(new GainBlockAction(player, player, this.block));
+        }
+    }
+
+    @Override
+    public AbstractCard makeCopy()
+    {
+        return new Defend_Magician();
     }
 }

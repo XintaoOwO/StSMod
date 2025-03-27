@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.mod.character.Magician;
+import xintao.mod.power.Phantom;
 import xintao.mod.util.CodeUtil;
 
 public class PhantomAttack extends CustomCard
@@ -45,6 +46,6 @@ public class PhantomAttack extends CustomCard
     public void use(AbstractPlayer player, AbstractMonster monster)
     {
         this.addToBot(new DamageAction(monster, new DamageInfo(player, this.damage, DamageInfo.DamageType.NORMAL)));
-        //this.addToBot(new ApplyPowerAction(monster, player, new ));
+        this.addToBot(new ApplyPowerAction(monster, player, new Phantom(monster, this.magicNumber), this.magicNumber));
     }
 }

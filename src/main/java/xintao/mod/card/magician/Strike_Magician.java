@@ -2,6 +2,7 @@ package xintao.mod.card.magician;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -45,5 +46,11 @@ public class Strike_Magician extends CustomCard
     {
         AbstractDungeon.actionManager
                 .addToBottom(new DamageAction(monster, new DamageInfo(player, this.damage, DamageInfo.DamageType.NORMAL)));
+    }
+
+    @Override
+    public AbstractCard makeCopy()
+    {
+        return new Strike_Magician();
     }
 }
