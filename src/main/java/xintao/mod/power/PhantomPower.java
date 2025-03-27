@@ -42,12 +42,7 @@ public class PhantomPower extends AbstractPower
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type)
     {
-        if (type == DamageInfo.DamageType.NORMAL)
-        {
-            return 0;
-        }
-        else 
-            return damage;
+        return 0;
     }
 
     @Override
