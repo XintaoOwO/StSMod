@@ -3,7 +3,7 @@ package xintao.mod.main;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 @SpireInitializer
-public class Core
+public class Main
 {
     public static void initialize()
     {
