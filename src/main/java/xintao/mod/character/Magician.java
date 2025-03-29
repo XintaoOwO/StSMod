@@ -19,7 +19,6 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Omamori;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import xintao.mod.card.magician.Defend_Magician;
-import xintao.mod.card.magician.PhantomAttack;
 import xintao.mod.card.magician.Strike_Magician;
 import xintao.mod.main.Character;
 import xintao.mod.util.CodeUtil;
@@ -42,7 +41,7 @@ public class Magician extends CustomPlayer
     private static final String CORPSE_IMAGE = CodeUtil.imgPath("char/corpse.png");
     // 战斗界面左下角能量图标的每个图层
     private static final String [] ORB_TEXTURES = 
-            new String[]
+            new String []
                     {
                             CodeUtil.imgPath("UI/orb/layer5.png"),
                             CodeUtil.imgPath("UI/orb/layer4.png"),
@@ -102,8 +101,6 @@ public class Magician extends CustomPlayer
             retVal.add(Strike_Magician.ID);
             retVal.add(Defend_Magician.ID);
         }
-        
-        retVal.add(PhantomAttack.ID);
         
         return retVal;
     }
