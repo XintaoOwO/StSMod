@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -56,5 +57,11 @@ public class PhantomAttack extends CustomCard
         this.addToBot(new ApplyPowerAction(monster, player, new PhantomPower(monster, this.magicNumber), this.magicNumber));
         // 在抽牌堆中加入一张晕眩
         this.addToBot(new MakeTempCardInDrawPileAction(new Dazed(), 1, true, true));
+    }
+
+    @Override
+    public AbstractCard makeCopy()
+    {
+        return new PhantomAttack();
     }
 }
