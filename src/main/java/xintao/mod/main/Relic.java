@@ -1,7 +1,6 @@
 package xintao.mod.main;
 
 //import basemod.AutoAdd;
-
 import basemod.BaseMod;
 import basemod.interfaces.EditRelicsSubscriber;
 //import com.megacrit.cardcrawl.unlock.UnlockTracker;
