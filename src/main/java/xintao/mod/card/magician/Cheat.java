@@ -22,7 +22,7 @@ public class Cheat extends CustomCard
     private static final String img_path = CodeUtil.imgPath("card/magician/Cheat.png");
     private static final CardType type = CardType.SKILL;
     private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
-    private static final CardRarity rarity = CardRarity.RARE;
+    private static final CardRarity rarity = CardRarity.UNCOMMON;
     private static final CardTarget target = CardTarget.SELF;
     
     public Cheat()
