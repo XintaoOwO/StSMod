@@ -56,7 +56,10 @@ public class Cheat extends CustomCard
         }
         else
         {
-            this.addToBot(new GamblingChipAction(AbstractDungeon.player, true));
+            if (!AbstractDungeon.player.hand.isEmpty())
+            {
+                this.addToBot(new GamblingChipAction(AbstractDungeon.player, true));
+            }
         }
     }
 
