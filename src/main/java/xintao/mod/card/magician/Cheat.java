@@ -19,7 +19,7 @@ public class Cheat extends CustomCard
     private static final int cost = 1;
     private static final String description1 = "* 预见 !M! 。 NL 抽2张牌。 NL 丢弃1张牌。";
     private static final String description2 = "* 预见 !M! 。 NL 丢弃任意张牌，并抽等量的牌。";
-    private static final String img_path = CodeUtil.imgPath("card/magician/Phantom_Attack.png");
+    private static final String img_path = CodeUtil.imgPath("card/magician/Cheat.png");
     private static final CardType type = CardType.SKILL;
     private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
     private static final CardRarity rarity = CardRarity.RARE;
