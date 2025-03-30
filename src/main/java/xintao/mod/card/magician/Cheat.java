@@ -18,7 +18,7 @@ public class Cheat extends CustomCard
     private static final String name = "出千";
     private static final int cost = 1;
     private static final String description1 = "* 预见 !M! 。 NL 抽2张牌。 NL 丢弃1张牌。";
-    private static final String description2 = "* 预见 !M! 。 NL 丢弃任意张牌，并抽等量的牌。";
+    private static final String description2 = "* 预见 !M! 。 NL 抽2张牌。 NL 丢弃任意张牌，并抽等量的牌。";
     private static final String img_path = CodeUtil.imgPath("card/magician/Cheat.png");
     private static final CardType type = CardType.SKILL;
     private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
@@ -29,7 +29,7 @@ public class Cheat extends CustomCard
     {
         super(ID, name, img_path, cost, description1, type, color, rarity, target);
         
-        this.magicNumber = this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber = 3;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class Cheat extends CustomCard
         if (!this.upgraded)
         {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
             this.rawDescription = description2;
             this.initializeDescription();
         }
@@ -56,6 +56,8 @@ public class Cheat extends CustomCard
         }
         else
         {
+            this.addToBot(new DrawCardAction(player, 2));
+            
             if (!AbstractDungeon.player.hand.isEmpty())
             {
                 this.addToBot(new GamblingChipAction(AbstractDungeon.player, true));
