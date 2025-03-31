@@ -17,6 +17,6 @@ public class StringList implements EditStringsSubscriber
     {
         String lang = "ZHS";
         
-        BaseMod.loadCustomStringsFile(RelicStrings.class, CodeUtil.langPath(lang + "relic.json"));
+        BaseMod.loadCustomStringsFile(RelicStrings.class, CodeUtil.langPath(lang + "/relic.json"));
     }
 }
