@@ -19,7 +19,6 @@ public class PhantomAttack extends CustomCard
     private static final String name = "幻象攻击";
     private static final int cost = 2;
     private static final String description = "造成 !D! 点伤害。 NL 给予目标 !M! 层 * xintaomod:幻象 ，将一张 * 晕眩 放入你的抽牌堆。 NL * 消耗 。";
-    //private static final String upgrade_description = "造成 !D! 点伤害。 NL 给予目标 !M! 层 * xintaomod:幻象 ，将一张 * 晕眩 放入你的抽牌堆。";
     private static final String img_path = CodeUtil.imgPath("card/magician/Phantom_Attack.png");
     private static final CardType type = CardType.ATTACK;
     private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
@@ -44,9 +43,6 @@ public class PhantomAttack extends CustomCard
             this.upgradeDamage(4); // 提高伤害
             this.upgradeMagicNumber(1); // 提高特殊值
             this.upgradeBaseCost(1); // 升级后的卡牌费用
-            //this.exhaust = false; // 取消消耗
-            //this.rawDescription = upgrade_description;
-            //this.initializeDescription();
         }
     }
 
