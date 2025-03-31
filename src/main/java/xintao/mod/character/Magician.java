@@ -26,8 +26,6 @@ import xintao.mod.util.CodeUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-import static xintao.mod.character.Magician.PlayerColorEnum.Magician_Character;
-
 public class Magician extends CustomPlayer
 {
     private static final String NAME = "魔术师";
@@ -66,7 +64,7 @@ public class Magician extends CustomPlayer
 
     public Magician(String name)
     {
-        super(name, Magician_Character, ORB_TEXTURES, CodeUtil.imgPath("UI/orb/vfx.png"), LAYER_SPEED, null, null);
+        super(name, PlayerColorEnum.Magician_Character, ORB_TEXTURES, CodeUtil.imgPath("UI/orb/vfx.png"), LAYER_SPEED, null, null);
         
         // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
