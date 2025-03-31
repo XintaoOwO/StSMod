@@ -16,11 +16,11 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.relics.Omamori;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import xintao.mod.card.magician.Defend_Magician;
 import xintao.mod.card.magician.Strike_Magician;
 import xintao.mod.main.Character;
+import xintao.mod.relic.magician.MagicStick;
 import xintao.mod.util.CodeUtil;
 
 import java.util.ArrayList;
@@ -110,7 +110,7 @@ public class Magician extends CustomPlayer
     public ArrayList<String> getStartingRelics()
     {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(Omamori.ID);
+        retVal.add(MagicStick.ID);
         
         return retVal;
     }
