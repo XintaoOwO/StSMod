@@ -33,7 +33,7 @@ public class Character implements EditCharactersSubscriber
     // 小尺寸的能量图标（战斗中，牌堆预览）
     private static final String Magician_ENEYGY_ORB = CodeUtil.imgPath("char/cost_orb.png");
     
-    public Character()
+    Character()
     {
         BaseMod.subscribe(this);
 

@@ -7,7 +7,7 @@ import xintao.mod.util.CodeUtil;
 
 public class Keyword implements EditKeywordsSubscriber
 {
-    public Keyword()
+    Keyword()
     {
         BaseMod.subscribe(this);
     }

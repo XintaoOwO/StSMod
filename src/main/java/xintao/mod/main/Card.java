@@ -7,7 +7,7 @@ import xintao.mod.util.CodeUtil;
 
 public class Card implements EditCardsSubscriber
 {
-    public Card()
+    Card()
     {
         BaseMod.subscribe(this);
     }

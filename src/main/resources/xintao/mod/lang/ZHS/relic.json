@@ -1,0 +1,11 @@
+{
+  "xintaomod:Magic_Stick":
+  {
+    "NAME": "魔术棒", 
+    "FLAVOR": "魔术师的道具，他总是在表演的时候拿着它。", 
+    "DESCRIPTIONS": 
+    [
+      "每场战斗开始时，抽 #b1 张牌"
+    ]
+  }
+}

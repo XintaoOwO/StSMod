@@ -9,21 +9,22 @@ import xintao.mod.util.CodeUtil;
 public class MagicStick extends CustomRelic
 {
     public static final String ID = CodeUtil.of("Magic_Stick");
-    private static final String img_path = CodeUtil.imgPath("relic/magic_stick.png");
+    private static final String img_path = CodeUtil.imgPath("relic/Magic_Stick.png");
+    private static final String outline_img_path = CodeUtil.imgPath("relic/Magic_Stick_Outline.png");
     private static final RelicTier tier = RelicTier.STARTER;
-    private static final String description = "每次战斗开始时，";
     private static final LandingSound landing_sound = LandingSound.FLAT;
     private static final Texture texture = new Texture(img_path);
+    private static final Texture texture_outline = new Texture(outline_img_path);
     
     public MagicStick()
     {
-        super(ID, texture, tier, landing_sound);
+        super(ID, texture, texture_outline, tier, landing_sound);
     }
 
     @Override
     public String getUpdatedDescription()
     {
-        return description;
+        return this.DESCRIPTIONS[0];
     }
 
     @Override

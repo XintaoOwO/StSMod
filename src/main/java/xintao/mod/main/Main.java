@@ -11,5 +11,6 @@ public class Main
         new Relic();
         new Character();
         new Keyword();
+        new StringList();
     }
 }

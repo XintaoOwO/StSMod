@@ -5,10 +5,11 @@ public final class CodeUtil
     public static final String Mod_ID = "xintaomod";
     public static final String Mod_Package = "xintao.mod";
     public static final String Mod_Path = "xintao/mod";
-    public static final String Mod_Img_Path = Mod_Path + "/img/";
     public static final String Mod_Card_Package = Mod_Package + ".card";
     public static final String Mod_Relic_Package = Mod_Package + ".relic";
     public static final String Mod_Char_Package = Mod_Package + ".character";
+    private static final String Mod_Img_Path = Mod_Path + "/img/";
+    private static final String Mod_Lang_Path = Mod_Path + "/lang/";
     
     public static String of(String id)
     {
@@ -18,5 +19,10 @@ public final class CodeUtil
     public static String imgPath(String path)
     {
         return Mod_Img_Path + path;
+    }
+    
+    public static String langPath(String path)
+    {
+        return Mod_Lang_Path + path;
     }
 }
