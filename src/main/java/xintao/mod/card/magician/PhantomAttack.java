@@ -32,6 +32,7 @@ public class PhantomAttack extends CustomCard
         this.damage = this.baseDamage = 8; // 伤害
         this.magicNumber = this.baseMagicNumber = 2; // 特殊值
         this.exhaust = true; // 消耗
+        this.cardsToPreview = new Dazed();
     }
 
     @Override
