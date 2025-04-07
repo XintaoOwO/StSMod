@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.UIStrings;
 
+@AbstractCardModifier.SaveIgnore
 public class UnplayableModifier extends AbstractCardModifier
 {
     public static final String ID = "xintaomod:UnplayableModifier";
