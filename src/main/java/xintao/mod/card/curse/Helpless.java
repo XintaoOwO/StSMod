@@ -1,10 +1,14 @@
 package xintao.mod.card.curse;
 
 import basemod.abstracts.CustomCard;
+import basemod.helpers.CardModifierManager;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.mod.util.CodeUtil;
+import xintao.mod.util.cardmodifier.UnplayableModifier;
 
 public class Helpless extends CustomCard
 {
@@ -21,12 +25,28 @@ public class Helpless extends CustomCard
     public Helpless()
     {
         super(ID, name, img_path, cost, description, type, color, rarity, target);
+        
+        this.isEthereal = true;
     }
 
     @Override
     public void triggerWhenDrawn()
     {
+        super.triggerWhenDrawn();
         
+        this.addToTop(new AbstractGameAction()
+        {
+            @Override
+            public void update()
+            {
+                this.isDone = true;
+                
+                for (AbstractCard card : AbstractDungeon.player.hand.group)
+                {
+                    CardModifierManager.addModifier(card, new UnplayableModifier());
+                }
+            }
+        });
     }
 
     @Override
