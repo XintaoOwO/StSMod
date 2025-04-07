@@ -43,7 +43,10 @@ public class Helpless extends CustomCard
                 
                 for (AbstractCard card : AbstractDungeon.player.hand.group)
                 {
-                    CardModifierManager.addModifier(card, new UnplayableModifier());
+                    if (CardModifierManager.hasModifier(card, ID))
+                    {
+                        CardModifierManager.addModifier(card, new UnplayableModifier());
+                    }
                 }
             }
         });
