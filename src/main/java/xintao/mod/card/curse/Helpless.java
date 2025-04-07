@@ -16,7 +16,7 @@ public class Helpless extends CustomCard
     private static final String name = "束手无策";
     private static final int cost = -2;
     private static final String description = " * 虚无 。 NL 抽到这张牌时，给所有手牌附加 * 不能被打出 。";
-    private static final String img_path = CodeUtil.imgPath("card/magician/Phantom_Attack.png");
+    private static final String img_path = CodeUtil.imgPath("card/curse/bewildered.png");
     private static final CardType type = CardType.CURSE;
     private static final CardColor color = CardColor.CURSE;
     private static final CardRarity rarity = CardRarity.CURSE;
