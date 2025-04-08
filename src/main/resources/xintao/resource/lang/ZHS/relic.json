@@ -8,7 +8,6 @@
       "每场战斗开始时，抽 #b1 张牌"
     ]
   },
-  
   "xintaomod:Question_Mark":
   {
     "NAME": "问号",
@@ -16,6 +15,15 @@
     "DESCRIPTIONS": 
     [
       "每当你进入?房间时，回复5点生命。"
+    ]
+  },
+  "xintaomod:":
+  {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": 
+    [
+      "每当你进入精英房间时，回复10点生命。"
     ]
   }
 }
