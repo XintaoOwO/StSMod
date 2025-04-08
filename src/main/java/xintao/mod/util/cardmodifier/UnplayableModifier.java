@@ -23,6 +23,12 @@ public class UnplayableModifier extends AbstractCardModifier
     }
 
     @Override
+    public boolean canPlayCard(AbstractCard card)
+    {
+        return false;
+    }
+
+    @Override
     public String identifier(AbstractCard card)
     {
         return ID;
