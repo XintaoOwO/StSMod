@@ -99,7 +99,6 @@ public class Magician extends CustomPlayer
         {
             retVal.add(Strike_Magician.ID);
             retVal.add(Defend_Magician.ID);
-            retVal.add(Helpless.ID);
         }
         
         return retVal;

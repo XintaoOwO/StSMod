@@ -3,6 +3,7 @@ package xintao.mod.main;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
+import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import xintao.mod.character.Magician;
@@ -30,6 +31,14 @@ public class Relic implements EditRelicsSubscriber
                             {
                                 UnlockTracker.markRelicAsSeen(relic.relicId);
                             }
+                        }
+                );
+        
+        new AutoAdd(CodeUtil.Mod_ID)
+                .packageFilter(CodeUtil.Mod_Relic_Package + ".shared")
+                .any(CustomRelic.class, (info, customRelic) ->
+                        {
+                            BaseMod.addRelic(customRelic, RelicType.SHARED);
                         }
                 );
     }
