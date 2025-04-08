@@ -12,6 +12,7 @@ import xintao.mod.util.cardmodifier.UnplayableModifier;
 
 public class Helpless extends CustomCard
 {
+    // 本卡牌尚未实装，因为卡牌修饰器不能正常工作
     public static final String ID = CodeUtil.of("Helpless");
     private static final String name = "束手无策";
     private static final int cost = -2;

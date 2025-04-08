@@ -7,5 +7,15 @@
     [
       "每场战斗开始时，抽 #b1 张牌"
     ]
+  },
+  
+  "xintaomod:Question_Mark":
+  {
+    "NAME": "问号",
+    "FLAVOR": "",
+    "DESCRIPTIONS": 
+    [
+      "每当你进入?房间时，回复5点生命。"
+    ]
   }
 }
