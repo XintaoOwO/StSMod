@@ -39,6 +39,11 @@ public class Relic implements EditRelicsSubscriber
                 .any(CustomRelic.class, (info, customRelic) ->
                         {
                             BaseMod.addRelic(customRelic, RelicType.SHARED);
+
+                            if (info.seen)
+                            {
+                                UnlockTracker.markRelicAsSeen(customRelic.relicId);
+                            }
                         }
                 );
     }
