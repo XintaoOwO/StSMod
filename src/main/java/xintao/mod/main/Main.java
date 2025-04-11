@@ -13,10 +13,14 @@ public class Main
 {
     public static void initialize()
     {
+        System.out.println("**** Mod Initializing ****");
+        
         new Card();
         new Relic();
         new Character();
         new Keyword();
         new StringList();
+        
+        System.out.println("**** Mod Initialized ****");
     }
 }
