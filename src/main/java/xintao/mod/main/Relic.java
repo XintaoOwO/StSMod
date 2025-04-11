@@ -11,6 +11,7 @@ import xintao.mod.util.CodeUtil;
 
 public class Relic implements EditRelicsSubscriber
 {
+    // 遗物类，遗物的构造方法
     Relic()
     {
         BaseMod.subscribe(this);

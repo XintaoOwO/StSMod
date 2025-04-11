@@ -7,6 +7,7 @@ import xintao.mod.util.CodeUtil;
 
 public class Card implements EditCardsSubscriber
 {
+    // 卡牌类
     Card()
     {
         BaseMod.subscribe(this);

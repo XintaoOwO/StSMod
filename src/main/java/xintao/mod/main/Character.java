@@ -9,6 +9,8 @@ import xintao.mod.util.CodeUtil;
 
 public class Character implements EditCharactersSubscriber
 {
+    // 角色类
+    // 角色颜色
     public static final Color Magician_colour = new Color(240.0f / 255.0f, 155.0f / 255.0f, 89.0f / 255.0f, 1.0f);
     // 人物选择界面按钮的图片
     private static final String Magician_CHARACTER_BUTTON = CodeUtil.imgPath("char/Character_Button.png");

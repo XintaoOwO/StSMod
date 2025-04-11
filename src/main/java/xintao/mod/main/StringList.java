@@ -8,6 +8,7 @@ import xintao.mod.util.CodeUtil;
 
 public class StringList implements EditStringsSubscriber
 {
+    // 字符串类，包括游戏的本地化（目前不打算支持除了简体中文外的本地化）
     StringList()
     {
         BaseMod.subscribe(this);
