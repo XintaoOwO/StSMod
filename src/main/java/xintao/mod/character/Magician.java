@@ -17,7 +17,6 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import xintao.mod.card.curse.Helpless;
 import xintao.mod.card.magician.Defend_Magician;
 import xintao.mod.card.magician.Strike_Magician;
 import xintao.mod.main.Character;
