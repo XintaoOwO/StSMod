@@ -18,7 +18,7 @@ public class PhantomAttack extends CustomCard
     public static final String ID = CodeUtil.of("Phantom_Attack");
     private static final String name = "幻象攻击";
     private static final int cost = 2;
-    private static final String description = "造成 !D! 点伤害。 NL 给予目标 !M! 层 * xintaomod:幻象 ，将一张 * 晕眩 放入你的抽牌堆。 NL * 消耗 。";
+    private static final String description = "造成 !D! 点伤害。 NL 给予目标 !M! 层 * xintaomod:幻象 ，将一张 *晕眩 放入你的抽牌堆。 NL * 消耗 。";
     private static final String img_path = CodeUtil.imgPath("card/magician/Phantom_Attack.png");
     private static final CardType type = CardType.ATTACK;
     private static final CardColor color = Magician.PlayerColorEnum.Magician_Colour;
