@@ -14,6 +14,7 @@ public final class Main
     public static void initialize()
     {
         System.out.println("**** Mod Initializing ****");
+        System.out.println("**** 模组初始化中 ****");
         
         new Card();
         new Relic();
@@ -22,5 +23,6 @@ public final class Main
         new StringList();
         
         System.out.println("**** Mod Initialized ****");
+        System.out.println("**** 模组已完成初始化任务 ****");
     }
 }
