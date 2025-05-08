@@ -27,7 +27,7 @@ public class Helpless extends CustomCard
     {
         super(ID, name, img_path, cost, description, type, color, rarity, target);
         
-        this.isEthereal = true;
+        super.isEthereal = true;
     }
 
     @Override
@@ -35,12 +35,12 @@ public class Helpless extends CustomCard
     {
         super.triggerWhenDrawn();
         
-        this.addToTop(new AbstractGameAction()
+        super.addToTop(new AbstractGameAction()
         {
             @Override
             public void update()
             {
-                this.isDone = true;
+                super.isDone = true;
                 
                 for (AbstractCard card : AbstractDungeon.player.hand.group)
                 {
