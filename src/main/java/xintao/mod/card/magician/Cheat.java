@@ -29,38 +29,38 @@ public class Cheat extends CustomCard
     {
         super(ID, name, img_path, cost, description1, type, color, rarity, target);
         
-        this.magicNumber = this.baseMagicNumber = 3;
+        super.magicNumber = super.baseMagicNumber = 3;
     }
 
     @Override
     public void upgrade()
     {
-        if (!this.upgraded)
+        if (!super.upgraded)
         {
-            this.upgradeName();
-            this.upgradeMagicNumber(2);
-            this.rawDescription = description2;
-            this.initializeDescription();
+            super.upgradeName();
+            super.upgradeMagicNumber(2);
+            super.rawDescription = description2;
+            super.initializeDescription();
         }
     }
 
     @Override
     public void use(AbstractPlayer player, AbstractMonster monster)
     {
-        this.addToBot(new ScryAction(this.magicNumber));
+        super.addToBot(new ScryAction(super.magicNumber));
         
-        if (!this.upgraded)
+        if (!super.upgraded)
         {
-            this.addToBot(new DrawCardAction(player, 2));
-            this.addToBot(new DiscardAction(player, player, 1, false));
+            super.addToBot(new DrawCardAction(player, 2));
+            super.addToBot(new DiscardAction(player, player, 1, false));
         }
         else
         {
-            this.addToBot(new DrawCardAction(player, 2));
+            super.addToBot(new DrawCardAction(player, 2));
             
             if (!AbstractDungeon.player.hand.isEmpty())
             {
-                this.addToBot(new GamblingChipAction(AbstractDungeon.player, true));
+                super.addToBot(new GamblingChipAction(AbstractDungeon.player, true));
             }
         }
     }

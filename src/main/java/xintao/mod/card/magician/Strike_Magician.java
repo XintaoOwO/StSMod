@@ -26,18 +26,18 @@ public class Strike_Magician extends CustomCard
     {
         super(ID, name, img_path, cost, description, type, color, rarity, target);
         
-        this.damage = this.baseDamage = 6;
-        this.tags.add(CardTags.STRIKE);
-        this.tags.add(CardTags.STARTER_STRIKE);
+        super.damage = super.baseDamage = 6;
+        super.tags.add(CardTags.STRIKE);
+        super.tags.add(CardTags.STARTER_STRIKE);
     }
 
     @Override
     public void upgrade()
     {
-        if (!this.upgraded)
+        if (!super.upgraded)
         {
-            this.upgradeName();
-            this.upgradeDamage(3);
+            super.upgradeName();
+            super.upgradeDamage(3);
         }
     }
 
@@ -45,7 +45,7 @@ public class Strike_Magician extends CustomCard
     public void use(AbstractPlayer player, AbstractMonster monster)
     {
         AbstractDungeon.actionManager
-                .addToBottom(new DamageAction(monster, new DamageInfo(player, this.damage, DamageInfo.DamageType.NORMAL)));
+                .addToBottom(new DamageAction(monster, new DamageInfo(player, super.damage, DamageInfo.DamageType.NORMAL)));
     }
 
     @Override

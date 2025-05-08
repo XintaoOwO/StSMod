@@ -25,17 +25,17 @@ public class Defend_Magician extends CustomCard
     {
         super(ID, name, img_path, cost, description, type, color, rarity, target);
         
-        this.block = this.baseBlock = 5;
-        this.tags.add(CardTags.STARTER_DEFEND);
+        super.block = super.baseBlock = 5;
+        super.tags.add(CardTags.STARTER_DEFEND);
     }
 
     @Override
     public void upgrade()
     {
-        if (!this.upgraded)
+        if (!super.upgraded)
         {
-            this.upgradeName();
-            this.upgradeBlock(3);
+            super.upgradeName();
+            super.upgradeBlock(3);
         }
     }
 
@@ -44,11 +44,11 @@ public class Defend_Magician extends CustomCard
     {
         if (Settings.isDebug)
         {
-            this.addToBot(new GainBlockAction(player, player, 50));
+            super.addToBot(new GainBlockAction(player, player, 50));
         }
         else
         {
-            this.addToBot(new GainBlockAction(player, player, this.block));
+            super.addToBot(new GainBlockAction(player, player, super.block));
         }
     }
 

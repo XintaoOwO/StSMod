@@ -29,31 +29,31 @@ public class PhantomAttack extends CustomCard
     {
         super(ID, name, img_path, cost, description, type, color, rarity, target);
 
-        this.damage = this.baseDamage = 8; // 伤害
-        this.magicNumber = this.baseMagicNumber = 2; // 特殊值
-        this.exhaust = true; // 消耗
-        this.cardsToPreview = new Dazed();
+        super.damage = super.baseDamage = 8; // 伤害
+        super.magicNumber = super.baseMagicNumber = 2; // 特殊值
+        super.exhaust = true; // 消耗
+        super.cardsToPreview = new Dazed();
     }
 
     @Override
     public void upgrade()
     {
-        if (!this.upgraded)
+        if (!super.upgraded)
         {
-            this.upgradeName(); // 升级名字绿色带加号
-            this.upgradeDamage(4); // 提高伤害
-            this.upgradeMagicNumber(1); // 提高特殊值
-            this.upgradeBaseCost(1); // 升级后的卡牌费用
+            super.upgradeName(); // 升级名字绿色带加号
+            super.upgradeDamage(4); // 提高伤害
+            super.upgradeMagicNumber(1); // 提高特殊值
+            super.upgradeBaseCost(1); // 升级后的卡牌费用
         }
     }
 
     @Override
     public void use(AbstractPlayer player, AbstractMonster monster)
     {
-        this.addToBot(new DamageAction(monster, new DamageInfo(player, this.damage, DamageInfo.DamageType.NORMAL)));
-        this.addToBot(new ApplyPowerAction(monster, player, new PhantomPower(monster, this.magicNumber), this.magicNumber));
+        super.addToBot(new DamageAction(monster, new DamageInfo(player, super.damage, DamageInfo.DamageType.NORMAL)));
+        super.addToBot(new ApplyPowerAction(monster, player, new PhantomPower(monster, super.magicNumber), super.magicNumber));
         // 在抽牌堆中加入一张晕眩
-        this.addToBot(new MakeTempCardInDrawPileAction(new Dazed(), 1, true, true));
+        super.addToBot(new MakeTempCardInDrawPileAction(new Dazed(), 1, true, true));
     }
 
     @Override
