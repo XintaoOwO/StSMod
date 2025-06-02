@@ -1,6 +1,7 @@
 package xintao.mod.card.magician;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.mod.character.Magician;
@@ -29,12 +30,21 @@ public class Telepathy extends CustomCard
     @Override
     public void upgrade()
     {
-        
+        if (!super.upgraded)
+        {
+            super.upgradeName();
+        }
     }
 
     @Override
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster)
     {
 
+    }
+
+    @Override
+    public AbstractCard makeCopy()
+    {
+        return new Telepathy();
     }
 }
