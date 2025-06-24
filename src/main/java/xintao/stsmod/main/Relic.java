@@ -1,4 +1,4 @@
-package xintao.mod.main;
+package xintao.stsmod.main;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -6,8 +6,8 @@ import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
 import basemod.interfaces.EditRelicsSubscriber;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import xintao.mod.character.Magician;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.character.Magician;
+import xintao.stsmod.util.CodeUtil;
 
 public class Relic implements EditRelicsSubscriber
 {

@@ -1,10 +1,10 @@
-package xintao.mod.main;
+package xintao.stsmod.main;
 
 import basemod.BaseMod;
 import basemod.interfaces.EditStringsSubscriber;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.util.CodeUtil;
 
 public class StringList implements EditStringsSubscriber
 {

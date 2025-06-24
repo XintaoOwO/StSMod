@@ -1,9 +1,9 @@
-package xintao.mod.main;
+package xintao.stsmod.main;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.util.CodeUtil;
 
 public class Card implements EditCardsSubscriber
 {

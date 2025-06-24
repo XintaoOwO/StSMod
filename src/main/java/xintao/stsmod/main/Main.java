@@ -1,4 +1,4 @@
-package xintao.mod.main;
+package xintao.stsmod.main;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 

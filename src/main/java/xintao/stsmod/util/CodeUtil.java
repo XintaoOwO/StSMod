@@ -1,9 +1,9 @@
-package xintao.mod.util;
+package xintao.stsmod.util;
 
 public final class CodeUtil
 {
     public static final String Mod_ID = "xintaomod";
-    public static final String Mod_Package = "xintao.mod";
+    public static final String Mod_Package = "xintao.stsmod";
     public static final String Mod_Resource_Path = "xintao/xintao_sts_mod_resource";
     public static final String Mod_Card_Package = Mod_Package + ".card";
     public static final String Mod_Relic_Package = Mod_Package + ".relic";

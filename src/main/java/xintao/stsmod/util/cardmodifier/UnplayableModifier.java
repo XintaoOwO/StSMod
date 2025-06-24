@@ -1,4 +1,4 @@
-package xintao.mod.util.cardmodifier;
+package xintao.stsmod.util.cardmodifier;
 
 import basemod.abstracts.AbstractCardModifier;
 import com.megacrit.cardcrawl.cards.AbstractCard;

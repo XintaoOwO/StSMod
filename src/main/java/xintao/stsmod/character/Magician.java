@@ -1,4 +1,4 @@
-package xintao.mod.character;
+package xintao.stsmod.character;
 
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
@@ -17,11 +17,11 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import xintao.mod.card.magician.Defend_Magician;
-import xintao.mod.card.magician.Strike_Magician;
-import xintao.mod.main.Character;
-import xintao.mod.relic.magician.MagicStick;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.card.magician.Defend_Magician;
+import xintao.stsmod.card.magician.Strike_Magician;
+import xintao.stsmod.main.Character;
+import xintao.stsmod.relic.magician.MagicStick;
+import xintao.stsmod.util.CodeUtil;
 
 import java.util.ArrayList;
 import java.util.List;

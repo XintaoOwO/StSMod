@@ -1,10 +1,10 @@
-package xintao.mod.relic.magician;
+package xintao.stsmod.relic.magician;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.util.CodeUtil;
 
 public class MagicStick extends CustomRelic
 {

@@ -1,9 +1,9 @@
-package xintao.mod.main;
+package xintao.stsmod.main;
 
 import basemod.BaseMod;
 import basemod.interfaces.EditKeywordsSubscriber;
-import xintao.mod.power.PhantomPower;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.power.PhantomPower;
+import xintao.stsmod.util.CodeUtil;
 
 public class Keyword implements EditKeywordsSubscriber
 {

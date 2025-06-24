@@ -1,4 +1,4 @@
-package xintao.mod.relic.shared;
+package xintao.stsmod.relic.shared;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.EventRoom;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.util.CodeUtil;
 
 public class QuestionMark extends CustomRelic
 {

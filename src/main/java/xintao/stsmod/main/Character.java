@@ -1,11 +1,11 @@
-package xintao.mod.main;
+package xintao.stsmod.main;
 
 import basemod.BaseMod;
 import basemod.interfaces.EditCharactersSubscriber;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import xintao.mod.character.Magician;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.character.Magician;
+import xintao.stsmod.util.CodeUtil;
 
 public class Character implements EditCharactersSubscriber
 {

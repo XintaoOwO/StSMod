@@ -1,4 +1,4 @@
-package xintao.mod.card.magician;
+package xintao.stsmod.card.magician;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -9,9 +9,9 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import xintao.mod.character.Magician;
-import xintao.mod.power.PhantomPower;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.character.Magician;
+import xintao.stsmod.power.PhantomPower;
+import xintao.stsmod.util.CodeUtil;
 
 public class PhantomAttack extends CustomCard
 {

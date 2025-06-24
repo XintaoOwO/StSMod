@@ -1,4 +1,4 @@
-package xintao.mod.card.magician;
+package xintao.stsmod.card.magician;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
@@ -9,8 +9,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import xintao.mod.character.Magician;
-import xintao.mod.util.CodeUtil;
+import xintao.stsmod.character.Magician;
+import xintao.stsmod.util.CodeUtil;
 
 public class Cheat extends CustomCard
 {
