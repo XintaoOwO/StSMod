@@ -24,7 +24,7 @@
         <!-- *****一定要改 ***** -->
         <!-- 改成你的steam安装路径位置，指向steamapps文件夹（该目录安装了杀戮尖塔及mod） -->
         <!-- 注意使用正斜杠（/）而不是反斜杠（\） -->
-        <Steam.path>D:/Steam/steamapps</Steam.path>
+        <Steam.path>C:/App/Steam/steamapps</Steam.path>
     </properties>
 
     <dependencies>
