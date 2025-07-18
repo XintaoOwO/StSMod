@@ -4,7 +4,7 @@ public final class CodeUtil
 {
     public static final String Mod_ID = "xintaomod";
     public static final String Mod_Package = "xintao.stsmod";
-    public static final String Mod_Resource_Path = "xintao/xintao_sts_mod_resource";
+    private static final String Mod_Resource_Path = "xintao/xintao_sts_mod_resource";
     public static final String Mod_Card_Package = Mod_Package + ".card";
     public static final String Mod_Relic_Package = Mod_Package + ".relic";
     public static final String Mod_Char_Package = Mod_Package + ".character";

@@ -20,23 +20,23 @@ public class PhantomPower extends AbstractPower
     
     public PhantomPower(AbstractCreature owner, int amountNumber)
     {
-        this.name = power_name;
-        this.ID = power_id;
-        this.owner = owner;
-        this.amount = amountNumber;
-        this.type = PowerType.DEBUFF;
-        this.isTurnBased = true;
-        
-        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
-        this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
-        
-        this.updateDescription();
+        super.name = power_name;
+        super.ID = power_id;
+        super.owner = owner;
+        super.amount = amountNumber;
+        super.type = PowerType.DEBUFF;
+        super.isTurnBased = true;
+
+        super.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
+        super.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
+
+        super.updateDescription();
     }
 
     @Override
     public void updateDescription()
     {
-        this.description = power_description;
+        super.description = power_description;
     }
 
     @Override
@@ -54,13 +54,13 @@ public class PhantomPower extends AbstractPower
         }
         else
         {
-            if (this.amount == 0)
+            if (super.amount == 0)
             {
-                this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, power_id));
+                super.addToBot(new RemoveSpecificPowerAction(super.owner, super.owner, power_id));
             }
             else
             {
-                this.addToBot(new ReducePowerAction(this.owner, this.owner, power_id, 1));
+                super.addToBot(new ReducePowerAction(super.owner, super.owner, power_id, 1));
             }
 
         }
