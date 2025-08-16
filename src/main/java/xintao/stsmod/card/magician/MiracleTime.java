@@ -12,7 +12,7 @@ public class MiracleTime extends CustomCard
     public static final String ID = CodeUtil.of("Miracle_Time");
     private static final String name = "奇迹时刻";
     private static final int cost = 1;
-    private static final String description1 = "对全体敌人造成50点伤害。需要在 的情况下才能打出。";
+    private static final String description1 = "对全体敌人造成50点伤害。在抽牌堆为空的情况下才能打出。";
     private static final String description2 = "";
     private static final String img_path = CodeUtil.imgPath("card/magician/Cheat.png");
     private static final CardType type = CardType.SKILL;
