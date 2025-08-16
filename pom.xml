@@ -7,7 +7,7 @@
     <!-- 改成你需要的名称 -->
     <groupId>xintao</groupId>
     <!-- 改成你需要的名称 -->
-    <artifactId>StS Mod</artifactId>
+    <artifactId>StSMod</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
 
