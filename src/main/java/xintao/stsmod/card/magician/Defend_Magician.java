@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.stsmod.character.Magician;
 import xintao.stsmod.util.CodeUtil;
 
-public class Defend_Magician extends CustomCard
+public class Defend_Magician extends CustomCard // 防御
 {
     public static final String ID = CodeUtil.of("Defend_Magician");
     private static final String name = "防御";

@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.stsmod.character.Magician;
 import xintao.stsmod.util.CodeUtil;
 
-public class MiracleTime extends CustomCard
+public class MiracleTime extends CustomCard // 奇迹时刻
 {
     public static final String ID = CodeUtil.of("Miracle_Time");
     private static final String name = "奇迹时刻";

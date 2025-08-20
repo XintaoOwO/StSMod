@@ -10,7 +10,9 @@ public final class CodeUtil
     public static final String Mod_Char_Package = Mod_Package + ".character";
     private static final String Mod_Img_Path = Mod_Resource_Path + "/img/";
     private static final String Mod_Lang_Path = Mod_Resource_Path + "/lang/";
-    
+
+    private CodeUtil() {}
+
     public static String of(String id)
     {
         return Mod_ID + ":" + id;

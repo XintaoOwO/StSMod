@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import xintao.stsmod.util.CodeUtil;
 
-public class StringList implements EditStringsSubscriber
+public class Localization implements EditStringsSubscriber
 {
-    // 字符串类，包括游戏的本地化（目前不打算支持除了简体中文外的本地化）
-    StringList()
+    // 游戏的本地化（目前不打算支持除了简体中文外的本地化）
+    Localization()
     {
         BaseMod.subscribe(this);
     }

@@ -20,7 +20,7 @@ public final class Main
         new Relic();
         new Character();
         new Keyword();
-        new StringList();
+        new Localization();
         
         System.out.println("**** Mod Initialized ****");
         System.out.println("**** 模组已完成初始化任务 ****");

@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.stsmod.character.Magician;
 import xintao.stsmod.util.CodeUtil;
 
-public class Cheat extends CustomCard
+public class Cheat extends CustomCard // 出千
 {
     public static final String ID = CodeUtil.of("Cheat");
     private static final String name = "出千";

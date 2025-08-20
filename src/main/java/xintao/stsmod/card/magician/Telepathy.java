@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.stsmod.character.Magician;
 import xintao.stsmod.util.CodeUtil;
 
-public class Telepathy extends CustomCard
+public class Telepathy extends CustomCard // 通灵术 / 读心术
 {
     public static final String ID = CodeUtil.of("Telepathy");
     private static final String name = "通灵术";

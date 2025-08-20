@@ -13,7 +13,7 @@ import xintao.stsmod.character.Magician;
 import xintao.stsmod.power.PhantomPower;
 import xintao.stsmod.util.CodeUtil;
 
-public class PhantomAttack extends CustomCard
+public class PhantomAttack extends CustomCard // 幻象攻击
 {
     public static final String ID = CodeUtil.of("Phantom_Attack");
     private static final String name = "幻象攻击";
@@ -32,7 +32,7 @@ public class PhantomAttack extends CustomCard
         super.damage = super.baseDamage = 8; // 伤害
         super.magicNumber = super.baseMagicNumber = 2; // 特殊值
         super.exhaust = true; // 消耗
-        super.cardsToPreview = new Dazed();
+        super.cardsToPreview = new Dazed(); // 晕眩
     }
 
     @Override

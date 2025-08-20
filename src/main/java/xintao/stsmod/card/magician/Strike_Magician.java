@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import xintao.stsmod.character.Magician;
 import xintao.stsmod.util.CodeUtil;
 
-public class Strike_Magician extends CustomCard
+public class Strike_Magician extends CustomCard // 打击
 {
     public static final String ID = CodeUtil.of("Strike_Magician");
     private static final String name = "打击";
